@@ -1,206 +1,287 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>VATECH soluções Inteligente</title>
-
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vatech Soluções Inteligentes</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<nav>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container nav">
+      <div class="logo">
+        <img src="img/logo.png" alt="Logo Vatech">
+        <div>
+          <h1>VATECH</h1>
+          <p>Soluções Inteligentes</p>
+        </div>
+      </div>
 
-    <div class="logo">
-        <img src="img/logo.png" alt="vatech">
+      <nav class="menu">
+        <a href="#inicio">Início</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#marcas">Equipamentos</a>
+        <a href="#beneficios">Benefícios</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contato">Contato</a>
+      </nav>
     </div>
+  </header>
 
-    <div class="menu-toggle" id="menu-toggle">
-        ☰
-    </div>
-
-    <ul id="menu">
-
-        <li><a href="#servicos">Serviços</a></li>
-
-        <li><a href="#como-funciona">
-            Casa Inteligente
-        </a></li>
-
-        <li><a href="#contato">Contato</a></li>
-
-    </ul>
-
-</nav>
-
-<header>
-
-    <div class="hero">
-
-        <h1>Automação Residencial Inteligente
-        </h1>
-
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <div class="container hero-content">
+      <div class="hero-text">
+        <span class="tag">Automação residencial e comercial</span>
+        <h2>Transforme sua casa ou empresa com tecnologia inteligente</h2>
         <p>
-            Tecnologia, conforto e segurança para transformar
-            sua casa em um ambiente moderno e conectado.
+          A Vatech oferece soluções em automação, iluminação, segurança, som ambiente e controle inteligente
+          para trazer mais conforto, praticidade, economia e segurança para o seu dia a dia.
         </p>
 
-        <div class="botoes">
+        <div class="hero-buttons">
+          <a class="btn-primary" href="https://wa.me/5511917837475" target="_blank">
+            Solicitar orçamento
+          </a>
+          <a class="btn-secondary" href="#servicos">Ver serviços</a>
+        </div>
+      </div>
 
-            <a href="https://wa.me/5511917837475" class="btn whatsapp">
-                Solicitar Orçamento
-            </a>
+      <div class="hero-image">
+        <img src="img/controle.jpg" alt="Automação residencial Vatech">
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section class="sobre section" id="sobre">
+    <div class="container sobre-grid">
+      <div class="sobre-img">
+        <img src="img/instalacao.jpg" alt="Instalação de automação">
+      </div>
+
+      <div class="sobre-text">
+        <span class="section-tag">Sobre a Vatech</span>
+        <h2>Soluções inteligentes para tornar ambientes mais modernos, práticos e seguros</h2>
+        <p>
+          A Vatech Soluções Inteligentes atua com automação residencial e comercial, oferecendo tecnologia
+          para controle de iluminação, energia, som, segurança e dispositivos inteligentes.
+        </p>
+        <p>
+          Nosso objetivo é entregar conforto, praticidade e eficiência por meio de soluções personalizadas,
+          pensadas para a necessidade de cada cliente.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVIÇOS -->
+  <section class="servicos section" id="servicos">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Nossos serviços</span>
+        <h2>Soluções que elevam o nível da sua casa ou empresa</h2>
+        <p>Conheça os principais serviços oferecidos pela Vatech.</p>
+      </div>
+
+      <div class="cards">
+        <div class="card">
+          <img src="img/iluminacao.jpg" alt="Iluminação inteligente">
+          <h3>Automação de Iluminação</h3>
+          <p>Controle da iluminação por app, assistente de voz ou comandos programados.</p>
         </div>
 
-    </div>
-
-</header>
-
-<section id="servicos">
-
-    <h2>Nossos Serviços</h2>
-
-    <div class="servicos-grid">
-
-        <div class="servico">
-            <img src="img/iluminacao.jpg"alt="Automação de Iluminação">
-          
-            <div class="overlay">
-                <h3>Automação de Iluminação</h3> 
-
-                <p>
-                    Controle de luzes,cenas e ambientes
-                    diretamente pelo celular ou comando de voz.
-                </p>
-            </div>
-    </div>
-
-    <div class="servico">
-        <img src="img/som.jpg" alt="Som Ambiente">
-
-        <div class="overlay">
-            <h3> Som Ambiente</h3>
-
-            <p>
-                Música en todos os ambiente com controle simples integrado.
-            </p>
+        <div class="card">
+          <img src="img/energia.jpg" alt="Controle de energia">
+          <h3>Controle de Energia</h3>
+          <p>Gerencie equipamentos e otimize o consumo para mais economia e eficiência.</p>
         </div>
+
+        <div class="card">
+          <img src="img/som.jpg" alt="Som ambiente">
+          <h3>Som Ambiente</h3>
+          <p>Integração de áudio com praticidade para residências, salas e ambientes comerciais.</p>
+        </div>
+
+        <div class="card">
+          <img src="img/seguranca.jpg" alt="Segurança inteligente">
+          <h3>Segurança Inteligente</h3>
+          <p>Soluções com monitoramento, automação de acesso e integração com dispositivos.</p>
+        </div>
+
+        <div class="card">
+          <img src="img/voz.jpg" alt="Comando por voz">
+          <h3>Controle por Voz</h3>
+          <p>Automatize rotinas e controle equipamentos usando assistentes inteligentes.</p>
+        </div>
+
+        <div class="card">
+          <img src="img/instalacao.jpg" alt="Instalação e suporte">
+          <h3>Instalação e Configuração</h3>
+          <p>Instalação, configuração e suporte para soluções de automação sob medida.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="marcas section" id="marcas">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Tecnologia e qualidade</span>
+      <h2>Marcas que representamos e utilizamos</h2>
+      <p>
+        Trabalhamos com soluções e equipamentos de qualidade para entregar automação, conforto,
+        desempenho e segurança em cada projeto.
+      </p>
     </div>
 
-    <div class="servico">
-        <img src="img/segurança.jpg" alt="eletrodomésticos Inteligente">
-        
-        <div class="overlay">
-            <h3>  Automação Residencial</h3>
+    <div class="marcas-grid">
+      <div class="marca-card">
+        <h3>WiseHome</h3>
+        <p class="marca-categoria">Automação residencial e comercial</p>
+        <p>
+          representamos a marca WiseHome para integrar iluminação, controle de dispositivos,
+          automações inteligentes e comando por aplicativo ou assistente de voz.
+        </p>
+      </div>
 
-            <p>
-                 Controle de TVs, ar-condicionado, persianas e outros dispositivos inteligentes.
-            </p>
-        </div>
+      <div class="marca-card">
+        <h3>Ludk</h3>
+        <p class="marca-categoria">Som ambiente</p>
+        <p>
+          Trabalhamos com equipamentos da ludk para som ambiente e distribuição de áudio,
+          oferecendo mais conforto, praticidade e qualidade sonora para diferentes ambientes.
+        </p>
+      </div>
     </div>
   </div>
 </section>
 
-<section id="como-funciona">
+  <!-- BENEFÍCIOS -->
+  <section class="beneficios section" id="beneficios">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Por que investir em automação?</span>
+        <h2>Mais conforto, segurança e controle para o seu dia a dia</h2>
+      </div>
 
-    <h2>Uma Casa Inteligente de Verdade</h2>
-
-    <p class="subtitulo">
-        Transforme sua residência com tecnologia, conforto,
-        praticidade e segurança.
-    </p>
-
-   <div class="funciona-grid">
-
-    <div class="funciona-card">
-        <img src="img/controle.jpg" alt="Controle Total">
-
-        <div class="overlay">
-            <h3> Controle Total</h3>
-            <p>Controle iluminação, tomadas e dispositivos pelo aplicativo.</p>
+      <div class="benefits-grid">
+        <div class="benefit-box">
+          <h3>Conforto</h3>
+          <p>Controle ambientes e dispositivos com poucos toques no celular ou por voz.</p>
         </div>
-    </div>
 
-    <div class="funciona-card">
-        <img src="img/voz.jpg" alt="Comando por Voz">
-
-        <div class="overlay">
-            <h3> Comando por Voz</h3>
-            <p>Integração com Alexa para controlar sua casa usando a voz.</p>
+        <div class="benefit-box">
+          <h3>Praticidade</h3>
+          <p>Crie rotinas automáticas para iluminação, som, energia e outros recursos.</p>
         </div>
-    </div>
 
-    <div class="funciona-card">
-        <img src="img/seguranca.jpg" alt="Segurança">
-
-        <div class="overlay">
-            <h3> Mais Segurança</h3>
-            <p>Monitoramento remoto e notificações em tempo real.</p>
+        <div class="benefit-box">
+          <h3>Economia</h3>
+          <p>Reduza desperdícios com gerenciamento mais inteligente dos equipamentos.</p>
         </div>
-    </div>
 
-    <div class="funciona-card">
-        <img src="img/energia.jpg" alt="Economia">
-
-        <div class="overlay">
-            <h3> Economia de Energia</h3>
-            <p>Automatize rotinas e reduza o consumo desnecessário.</p>
+        <div class="benefit-box">
+          <h3>Segurança</h3>
+          <p>Tenha mais controle e monitoramento dos ambientes com soluções integradas.</p>
         </div>
+      </div>
     </div>
+  </section>
 
-    <div class="funciona-card">
-        <img src="img/instalacao.jpg" alt="Instalação">
+  <!-- GALERIA 
+  <section class="galeria section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Projetos e inspirações</span>
+        <h2>Ambientes que podem receber automação inteligente</h2>
+      </div>
 
-        <div class="overlay">
-            <h3> Instalação Simplificada</h3>
-            <p>Soluções para imóveis novos e já construídos.</p>
+      <div class="gallery-grid">
+        <img src="img/projeto1.png" alt="Projeto Vatech 1">
+        <img src="img/projeto2.png" alt="Projeto Vatech 2">
+        <img src="img/projeto3.png" alt="Projeto Vatech 3">
+      </div>
+    </div>
+  </section>  -->
+
+  <!-- FAQ -->
+  <section class="faq section" id="faq">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Dúvidas frequentes</span>
+        <h2>Perguntas que os clientes costumam fazer</h2>
+      </div>
+
+      <div class="faq-list">
+        <div class="faq-item">
+          <h3>A automação pode ser controlada pelo celular?</h3>
+          <p>Sim. O cliente pode controlar iluminação, energia, som e outros dispositivos pelo celular.</p>
         </div>
-    </div>
 
-    <div class="funciona-card">
-        <img src="img/cenarios.jpg" alt="Cenários">
-
-        <div class="overlay">
-            <h3> Cenários Personalizados</h3>
-            <p>Crie ambientes para cada momento do seu dia.</p>
+        <div class="faq-item">
+          <h3>É possível automatizar apenas um cômodo?</h3>
+          <p>Sim. A automação pode ser feita de forma gradual, começando por um ambiente específico.</p>
         </div>
+
+        <div class="faq-item">
+          <h3>A Vatech faz orçamento?</h3>
+          <p>Sim. Entre em contato para avaliarmos sua necessidade e indicarmos a melhor solução.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Vocês atendem projetos residenciais e comerciais?</h3>
+          <p>Sim. Trabalhamos com soluções inteligentes para residências, escritórios e outros ambientes.</p>
+        </div>
+      </div>
     </div>
+  </section>
 
-</div>
-
-</section>
-
-<section id="contato">
-
-    <h2>Solicite seu Orçamento</h2>
-
-    <p>
-        Desenvolvemos soluções personalizadas para residências,
-        apartamentos e empresas.
-    </p>
-
-
-
-    <a href="https://wa.me/5511917837475" class="btn whatsapp">
+  <!-- CTA FINAL -->
+  <section class="cta-final">
+    <div class="container cta-box">
+      <h2>Leve mais tecnologia, praticidade e segurança para o seu ambiente</h2>
+      <p>Fale com a Vatech e solicite um orçamento para seu projeto.</p>
+      <a class="btn-primary" href="https://wa.me/5511917837475" target="_blank">
         Falar no WhatsApp
-    </a>
+      </a>
+    </div>
+  </section>
 
-</section>
+  <!-- CONTATO -->
+  <section class="contato section" id="contato">
+    <div class="container contato-grid">
+      <div>
+        <span class="section-tag">Contato</span>
+        <h2>Vamos conversar sobre o seu projeto</h2>
+        <p>Entre em contato e tire suas dúvidas sobre automação, instalação e orçamento.</p>
+      </div>
 
-<footer>
+      <div class="contato-box">
+        <p><strong>WhatsApp:</strong> (11) 917837475</p>
+        <p><strong>Email:</strong> vatechsolucoesinteligente@gmail.com</p>
+        <p><strong>Atendimento:</strong> Segunda a sábado</p>
+      </div>
+    </div>
+  </section>
 
-    <h3>VATECH Soluções Inteligentes</h3>
+  <!-- RODAPÉ -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>© 2026 Vatech Soluções Inteligentes. Todos os direitos reservados.</p>
+    </div>
+  </footer>
 
-    <p>
-        Automação Residencial • Som Ambiente • Segurança
-    </p>
+  <!-- BOTÃO WHATSAPP -->
+  <a class="whatsapp-float" href="https://wa.me/5511917837475" target="_blank">
+    WhatsApp
+  </a>
 
-    <p>
-        Transformando casas em ambientes modernos e conectados.
-    </p>
-
-    <a href="https://www.instagram.com/vatech.si/" target="_blank">
-        @vatech.si
-    </a>
-
-</footer>
+</body>
+</html>
