@@ -36,3 +36,10 @@ indice = 0;
 trocarDepoimento();
 
 setInterval(trocarDepoimento,4000);
+
+const menuToggle = document.getElementById("menu-toggle");
+const menu = document.getElementById("menu");
+
+menuToggle.addEventListener("click", () => {
+  menu.classList.toggle("active");
+});
